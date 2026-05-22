@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коршкова Арина Алексеевна. РГЗ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="rgz.css">
+    <link rel="shortcut icon" href="rgz_icom.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .menu {
+            font-size: 24px;
+            margin: 0px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.127);
+        }
+        .menu-point {
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 24px;
+        }
+        .start-button {
+            position: fixed;
+            right: 20px;
+            font-size: 16px;
+        }
+        .nav-tabs .nav-link.active {
+            color: #169A35;
+        }
+        .nav-link {
+            color: black;
+        }
+    </style>
+
+    <script>
+        window.addEventListener('scroll', function() {
+        const button = document.querySelector('.start-button');
+        const footer = document.querySelector('footer');
+        const main = document.querySelector('main');
+        
+        const footerRect = footer.getBoundingClientRect();
+        const mainRect = main.getBoundingClientRect();
+        
+        const windowHeight = window.innerHeight;
+        
+        if (footerRect.top < windowHeight) {
+            const distanceToFooter = footerRect.top - button.offsetHeight - 10;
+            button.style.bottom = (windowHeight - footerRect.top + 10) + 'px';
+        } else {
+            button.style.bottom = '10px';
+        }
+    });
+
+    window.addEventListener('resize', function() {
+        window.dispatchEvent(new Event('scroll'));
+    });
+    </script>
+</head>
+<body>
+    <header>
+        НГТУ, ФБ, Расчетно-графическое задание
+    </header>
+
+    <main>
+        <section id="start"></section>
+        <div class="menu">
+            <h3>Меню</h3>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">О компании</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">Новости</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="curs.html">Курс валют</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Контактные данные</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="video.html">Видео</a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <!--Добавить картинку логотипа-->
+        <h1>Общие сведения об организации</h1>
+        <p><b>ПАО «ТНС энерго Ростов-на-Дону»</b> — это гарантирующий поставщик электроэнергии на территории 
+            Ростовской области. Компания занимается куплей-продажей (сбытом) электрической энергии и является 
+            ключевым игроком на розничном энергетическом рынке региона</p>
+        <p>Основными видами деятельности ПАО «ТНС энерго Ростов‑на‑Дону» являются покупка электрической 
+            энергии на оптовом и розничном рынках и её продажа физическим и юридическим лицам на территории 
+            Ростовской области.</p>
+        <img src="icono.png" style="height: 300px; margin-left: 15px;">
+        <p><a href="https://rostov.tns-e.ru/">Ссылка на официальный сайт компании</a></p>
+
+        <h2>Цель</h2>
+        <p>Лидерство на региональном рынке энергоснабжения 
+            и развитие компании в интересах акционеров
+            и потребителей</p>
+
+        <h2>Преимущества</h2>
+        <p><u>Надежность:</u> компания является гарантирующим поставщиком электроэнергии в Ростовской области</p>
+        <p><u>Удобные сервисы:</u> единая справочная служба, личный кабинет, мобильное приложение, электронная квитанция</p>
+        <p><u>Развитая сеть обслуживания:</u> 9 межрайонных отделений и Управление компании,
+            центры обслуживания в каждом районе области</p>
+        <h1>История организации</h1>
+        <p>Компания была основана в 2005 году (зарегистрирована 11 января 2005 года) и работает на рынке уже более 19 лет.</p>
+
+        <p><b>2005 год:</b> Регистрация юридического лица — Публичное акционерное общество "ТНС энерго Ростов-на-Дону".</p>
+        <p><b>2017 год:</b> Компания начала предоставлять абонентам дополнительные услуги, такие как замена и демонтаж приборов учета электроэнергии (счетчиков).</p>
+        <p><b>2018 год:</b> Значительное снижение потерь в сетях (на 4.5%), что повысило эффективность работы.</p>
+
+        <h1>Руководство и структура</h1>
+        <p style="font-size: 20px;">Ткаченко Светлана Алексеевна</p>
+        <img src="ruc.png" style="margin-left: 15px;">
+        <p><i>Заместитель Генерального директора ПАО ГК «ТНС энерго» — Управляющий директор ПАО «ТНС энерго Ростов-на-Дону»</i></p>
+
+        <h1>Реквизиты компании</h1>
+        <table style="margin-left: 15px;">
+            <tr>
+                <td>ИНН</td>
+                <td>6168002922</td>
+            </tr>
+            <tr>
+                <td>КПП</td>
+                <td>997650001</td>
+            </tr>
+            <tr>
+                <td>Р/С</td>
+                <td>40702810700000006181</td>
+            </tr>
+            <tr>
+                <td>Наименование банка</td>
+                <td>ПАО КБ «Центр-инвест» г. Ростов-на-Дону</td>
+            </tr>
+            <tr>
+                <td>БИК</td>
+                <td>046015762</td>
+            </tr>
+            <tr>
+                <td>К/С</td>
+                <td>30101810100000000762</td>
+            </tr>
+            <tr>
+                <td>ОГРН</td>
+                <td>1056164000023</td>
+            </tr>
+            <tr>
+                <td>Место нахождения</td>
+                <td>Ростовская область, город Ростов-на-Дону</td>
+            </tr>
+            <tr>
+                <td>Адрес юридического лица</td>
+                <td>344022, Ростовская область, г. Ростов-на-Дону, пер. Журавлева, д. 47</td>
+            </tr>
+            <tr>
+                <td>Телефон</td>
+                <td>8 (863) 286-86-80</td>
+            </tr>
+        </table>
+        <br>
+        <button class="start-button"><a href="#start">В начало</a></button>
+    </main>
+
+    <footer>
+        &copy; Арина Коршкова ФБИ-42, 2 курс, 2026
+    </footer>
+    
+</body>
+</html>
